@@ -1,0 +1,184 @@
+@charset "ISO-8859-1";
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-color: #eeeeee;
+}
+
+/*header*/
+
+header{
+	display: flex;
+	justify-content: center;		
+}
+
+.container{	
+	display: flex;
+	flex-direction: column;
+	
+	width: 1024px;
+			
+}
+
+.container .titulo{	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 15px;
+
+}
+
+.container .msg{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+	color: red;
+}
+
+/*header*/
+
+
+/*section id="form"*/
+
+#form{
+	display: flex;	
+	justify-content: center;	
+}
+
+#form .container{
+	align-items: center;
+}
+
+.container .divForm{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 390px;
+	
+	
+}
+
+.divForm .form{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;	
+	margin-bottom: 25px;
+	background-color: #999999;
+}
+
+.form label{
+	font-size: 25px;
+}
+
+.form input{
+	border: 0;
+	width: 250px;
+	height: 25px;
+}
+
+.form input[type=submit]{
+	font-size: 25px;
+	height: 30%;	
+	color: #ffffff;
+	border-radius: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: gray;
+	width: 48.5%;    
+    padding: 8px 15px 8px 15px;
+    margin-top: 15px;
+    border: none;
+}
+
+.form input[type=text]:focus,
+.form input[type=password]:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;	 
+}
+
+.form input[type=submit]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+
+
+/*section id="form"*/
+
+/*section id="primeiroAcesso" */
+
+#primeiroAcesso{
+	display: flex;
+	justify-content: center;
+}
+#primeiroAcesso .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#primeiroAcesso a{
+	text-decoration: none;
+	color: red;
+}
+#primeiroAcesso a:visited{
+	color: red;
+}
+
+
+
+/*fim section id="primeiroAcesso" */
+
+
+
+
+/*Resposividade*/
+
+@media (max-width:600px){
+	.container .titulo{
+		margin-top: 20px;
+		margin-bottom: 10px;
+		font-size: 10px;
+	}
+	.container .msg{		
+		margin-bottom: 10px;
+	}
+	
+	.divForm p{
+		margin-top: 5px;
+	}
+	
+	.ultimo{
+		margin-bottom: 25px;
+	}
+	
+	.divForm .form{
+	
+		padding: 15px;	
+		margin-top: 5px;	
+	
+	}
+	
+	.form input[type=submit]{		
+	color: red;	
+	background-color: gray;
+	width: 48.5%;    
+    padding: 8px 15px 8px 15px;
+    margin-top: 10px;
+    border: none;
+	}
+	
+}
